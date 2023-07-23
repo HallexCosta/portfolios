@@ -1,6 +1,8 @@
 import "./styles.css";
 
 // component exports
+export * from "./src/Section";
+export * from "./src/Container";
 export * from "./src/Circle";
 export * from "./src/Button";
 export * from "./src/Header";

@@ -16,7 +16,7 @@ export function Top({ name }: Props) {
       text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-indigo-400 to-blue-400
     `}
     >
-      Hello, I'm {name}
+      Hello, I'm {name},
     </h1>
   );
 }

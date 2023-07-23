@@ -7,6 +7,7 @@ interface CricleRootProps {
 }
 
 export function Root({ children, size, className }: CricleRootProps) {
+  className = className || "";
   let width, height;
 
   switch (size) {
@@ -32,7 +33,7 @@ export function Root({ children, size, className }: CricleRootProps) {
 
   return (
     <div
-      className={`border rounded-full border-cyan-500 absolute ${className}`}
+      className={`border rounded-full border-cyan-500 ${className}`}
       style={{ width, height }}
     >
       {children}

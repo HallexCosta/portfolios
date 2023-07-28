@@ -5,11 +5,12 @@ const poppins = Poppins({
   weight: "300",
 });
 
-export function Description() {
+interface DescriptionProps {
+  content: string;
+}
+
+export function Description({ content }: DescriptionProps) {
   return (
-    <p className={`${poppins.className} text-gray-500 max-w-2xl`}>
-      Former digital-marketing specialist, seeking to apply competent
-      development skills with focus on collaboration, communication, and passion
-    </p>
+    <p className={`${poppins.className} text-gray-500 max-w-2xl`}>{content}</p>
   );
 }

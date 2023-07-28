@@ -11,7 +11,7 @@ module.exports = {
         "back-default": "#0F1624",
       },
       maxWidth: {
-        containerDesktopLarge: "1670px",
+        desktopLarge: "1670px",
         desktop: "1260px",
         laptop: "1024px",
       },
@@ -30,6 +30,22 @@ module.exports = {
 
         desktopLarge: "1690px",
         // => @media (min-width: 1536px) { ... }
+      },
+      animation: {
+        cursor: "cursor .6s linear infinite alternate",
+        typing: "type 1.8s ease-out .8s 1 normal both",
+        "type-reverse": "type 1.8s ease-out 0s infinite alternate-reverse both",
+      },
+      keyframes: {
+        cursor: {
+          "50%": {
+            borderColor: "transparent",
+          },
+        },
+        typing: {
+          from: { width: "0%" },
+          to: { width: "100%" },
+        },
       },
     },
   },

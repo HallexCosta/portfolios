@@ -1,3 +1,4 @@
+"use client";
 import {
   ButtonGradient,
   Title,
@@ -187,7 +188,7 @@ export default function Page() {
                 About me
               </h2>
 
-{/* <div>
+              {/* <div>
   <Timeline.Root>
     <Timeline.Separator>
       <Timeline.Dot />

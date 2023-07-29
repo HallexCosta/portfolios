@@ -1,3 +1,10 @@
+"use client";
+import { Poppins } from "@next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "600",
+});
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +12,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <style jsx global>
+          {`
+            html {
+              font-family: ${poppins.style.fontFamily};
+            }
+          `}
+        </style>
+      </head>
       <body className="bg-back-default">{children}</body>
     </html>
   );

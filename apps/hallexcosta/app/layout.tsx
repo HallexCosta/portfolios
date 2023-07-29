@@ -1,5 +1,3 @@
-// import "ui/styles.css";
-
 export default function RootLayout({
   children,
 }: {
@@ -7,6 +5,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head></head>
       <body className="bg-back-default">{children}</body>
     </html>
   );

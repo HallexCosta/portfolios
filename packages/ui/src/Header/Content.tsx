@@ -1,4 +1,3 @@
-"use client";
 import { ReactNode } from "react";
 import { Poppins } from "@next/font/google";
 
@@ -12,7 +11,7 @@ interface HeaderContentProps {
 }
 export function Content({ children, className }: HeaderContentProps) {
   return (
-    <div className={`${poppins.className} ${className} font-medium text-lg`}>
+    <div className={`font-poppins ${className} font-medium text-lg`}>
       {children}
     </div>
   );

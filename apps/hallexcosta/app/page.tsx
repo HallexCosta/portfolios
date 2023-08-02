@@ -1,4 +1,3 @@
-"use client";
 import {
   ButtonGradient,
   Title,
@@ -84,7 +83,7 @@ export default function Page() {
             <div className="flex flex-col mt-[152px] w-full">
               <h2
                 id="projects"
-                className={`${poppins.className} text-5xl text-white w-full`}
+                className={`font-poppins text-5xl text-white w-full`}
               >
                 Projects
               </h2>
@@ -123,7 +122,7 @@ export default function Page() {
             <div className="flex flex-col mt-[152px] w-full">
               <h2
                 id="technologies"
-                className={`${poppins.className} text-5xl text-white w-full`}
+                className={`font-poppins text-5xl text-white w-full`}
               >
                 Technologies
               </h2>
@@ -183,7 +182,7 @@ export default function Page() {
             <div className="flex flex-col mt-[152px] w-full">
               <h2
                 id="about-me"
-                className={`${poppins.className} text-5xl text-white w-full`}
+                className={`font-poppins text-5xl text-white w-full`}
               >
                 About me
               </h2>

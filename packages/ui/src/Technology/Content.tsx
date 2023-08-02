@@ -1,4 +1,3 @@
-"use client";
 import { Poppins } from "@next/font/google";
 
 const poppins = Poppins({
@@ -11,7 +10,5 @@ interface Props {
 }
 
 export function Content({ text }: Props) {
-  return (
-    <span className={`${poppins.className} text-3xl text-white`}>{text}</span>
-  );
+  return <span className={`font-poppins text-3xl text-white`}>{text}</span>;
 }

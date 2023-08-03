@@ -12,12 +12,12 @@ import {
   Project,
   Technology,
 } from "ui";
-// import { Poppins } from "next/font/google";
+import { Poppins } from "@next/font/google";
 
-// const poppins = Poppins({
-//   weight: "600",
-//   subsets: ["latin"],
-// });
+const poppins = Poppins({
+  weight: "600",
+  subsets: ["latin"],
+});
 
 export default function Page() {
   return (

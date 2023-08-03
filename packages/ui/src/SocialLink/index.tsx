@@ -16,7 +16,7 @@ export function SocialLink({ name, url, className }: SocialLinkProps) {
   let icon = () => <></>;
   switch (name) {
     case "linkedin":
-      icon = () => (
+      const linkedinIcon = () => (
         <a href={url} target="_blank">
           <LinkedinLogo
             className={`${className} cursor-pointer`}
@@ -26,9 +26,10 @@ export function SocialLink({ name, url, className }: SocialLinkProps) {
           />
         </a>
       );
+      icon = linkedinIcon;
       break;
     case "instagram":
-      icon = () => (
+      const instagramIcon = () => (
         <a href={url} target="_blank">
           <InstagramLogo
             className={`${className} cursor-pointer`}
@@ -38,9 +39,11 @@ export function SocialLink({ name, url, className }: SocialLinkProps) {
           />
         </a>
       );
+
+      icon = instagramIcon;
       break;
     case "github":
-      icon = () => (
+      const githubIcon = () => (
         <a href={url} target="_blank">
           <GithubLogo
             className={`${className} cursor-pointer`}
@@ -50,9 +53,10 @@ export function SocialLink({ name, url, className }: SocialLinkProps) {
           />
         </a>
       );
+      icon = githubIcon;
       break;
     case "facebook":
-      icon = () => (
+      const facebookIcon = () => (
         <a href={url} target="_blank">
           <FacebookLogo
             className={`${className} cursor-pointer`}
@@ -62,6 +66,7 @@ export function SocialLink({ name, url, className }: SocialLinkProps) {
           />
         </a>
       );
+      icon = facebookIcon;
       break;
     default:
       break;

@@ -1,6 +1,12 @@
 "use client";
+import { Poppins } from "next/font/google";
+
 import { useEffect, useState } from "react";
 
+const poppins = Poppins({
+  weight: "600",
+  subsets: ["latin"],
+});
 interface Props {
   name: string;
 }
@@ -14,14 +20,14 @@ export function Top({ name }: Props) {
 
   return (
     <h1
-      className={`font-poppins max-h-[62px] w-fit inline-block text-6xl font-semibold animate-typewriter
+      className={`${poppins.className} max-h-[62px] w-fit inline-block text-6xl font-semibold animate-typewriter
       text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-indigo-400 to-blue-400
     `}
       style={{
         borderRight: animationComplete ? "none" : "5px solid whitesmoke",
       }}
     >
-      Hello, I'm {name},
+      Hello, I{"'"}m {name},
     </h1>
   );
 }

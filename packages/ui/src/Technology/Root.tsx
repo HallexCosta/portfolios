@@ -1,10 +1,11 @@
-import { Poppins } from "next/font/google";
 import { ReactNode } from "react";
+// import { Poppins } from "next/font/google";
 
-const poppins = Poppins({
-  weight: "600",
-  subsets: ["latin"],
-});
+// const poppins = Poppins({
+//   weight: "600",
+//   subsets: ["latin"],
+//   display: "swap",
+// });
 
 interface Props {
   children: ReactNode;

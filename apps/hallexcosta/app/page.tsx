@@ -12,12 +12,13 @@ import {
   Project,
   Technology,
 } from "ui";
-// import { Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-// const poppins = Poppins({
-//   weight: "600",
-//   subsets: ["latin"],
-// });
+const poppins = Poppins({
+  weight: "600",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function Page() {
   return (
@@ -83,7 +84,7 @@ export default function Page() {
             <div className="flex flex-col mt-[152px] w-full">
               <h2
                 id="projects"
-                className={`font-poppins text-5xl text-white w-full`}
+                className={`${poppins.className} text-5xl text-white w-full`}
               >
                 Projects
               </h2>
@@ -104,14 +105,14 @@ export default function Page() {
                   repositoryUrl="https://github.com/HallexCosta/habits-tracker"
                 />
 
-                <Project
+                {/* <Project
                   title="Furniture store landing page"
                   description="Responsive HTML/CSS layout for online furniture store. HTML5, CSS3
                   (SCSS)"
                   imageUrl="https://github.com/exif-js/exif-js/assets/55293671/37717c42-5aa1-41c6-94a9-8314888e42f5"
                   previewUrl="https://google.com"
                   repositoryUrl="https://github.com/hallexcosta"
-                />
+                /> */}
               </div>
             </div>
           </Container>
@@ -122,7 +123,7 @@ export default function Page() {
             <div className="flex flex-col mt-[152px] w-full">
               <h2
                 id="technologies"
-                className={`font-poppins text-5xl text-white w-full`}
+                className={`${poppins.className} text-5xl text-white w-full`}
               >
                 Technologies
               </h2>
@@ -182,7 +183,7 @@ export default function Page() {
             <div className="flex flex-col mt-[152px] w-full">
               <h2
                 id="about-me"
-                className={`font-poppins text-5xl text-white w-full`}
+                className={`${poppins.className} text-5xl text-white w-full`}
               >
                 About me
               </h2>

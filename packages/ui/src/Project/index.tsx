@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
@@ -20,15 +21,24 @@ export function Project({
   previewUrl,
   repositoryUrl,
 }: ProjectProps) {
+  imageUrl = imageUrl || "";
   description = description || "";
 
   return (
     <div className="flex flex-col justify-between p-12 max-h-[700px] max-w-[570px] border border-purple-800 rounded-xl">
       <div className="flex flex-col justify-between w-full gap-y-4 mb-8">
-        <img src={imageUrl} alt="" width={480} height={255} className="mb-8" />
+        <Image
+          src={imageUrl}
+          alt=""
+          width={480}
+          height={255}
+          className="mb-8"
+        />
 
-        <h3 className={`font-poppins text-white text-2xl`}>{title}</h3>
-        <p className={`font-poppins text-md font-light text-zinc-500 max-h-44`}>
+        <h3 className={`${poppins.className} text-white text-2xl`}>{title}</h3>
+        <p
+          className={`${poppins.className} text-md font-light text-zinc-500 max-h-44`}
+        >
           {description.length > 200
             ? `${description?.slice(0, 200)}...`
             : description}
